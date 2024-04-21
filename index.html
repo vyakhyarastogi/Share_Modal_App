@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Modal App</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!--circle1-->
+    <div class="circle1"></div>
+    <!--circle2-->
+    <div class="circle2"></div>
+    <div class="wrapper">
+        <div class="card-wrapper">
+            <div>
+                <img src="./assets/vyakhya.jpg" alt="">
+            </div>
+
+            <div class="user-name">
+                <h2>Vyakhya Rastogi</h2>
+            </div>
+            <div class="designation">
+                <h3>Student,VIT Bhopal</h3>
+            </div>
+            <!--button div-->
+            <div class="bottom-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+                    <i class="fa-solid fa-share"></i>
+                    <div>Share My Profile</div>
+                </button>
+                <button>
+                    <a href="https://www.linkedin.com/in/vyakhya-rastogi-283a78246/">
+                        <div class="btn-follow btn-card">Follow Me</div>
+                    </a>
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+    <!--Modal Component-->
+    <div class="modal">
+        <!--flex justify between-->
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <div>
+                <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+
+        <div> <!-- flex flex-col gap-->
+            <h3>Share this via</h3>
+            <div class="icon-container"> <!--flex flex-row gap-->
+                <a href="https://www.facebook.com/profile.php?id=100009199038763" class="icon" id="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="https://twitter.com/RastogiVya20640" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="https://www.instagram.com/vyakhya_25/?hl=en" class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://web.whatsapp.com/" class="icon" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://web.telegram.org/k/" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!--overlay-->
+    <div class="overlay" onclick="closeModal()"></div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
